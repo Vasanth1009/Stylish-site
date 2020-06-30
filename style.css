@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;   
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.nav-bar{
+    position: absolute;
+    height: 625px;
+    width: 70px;
+    background: rgb(41, 27, 27);
+}
+.logo{
+    border-radius: 50px;
+    height: 35px;
+    margin: 40px 15px;
+    cursor: pointer;
+}
+.socialicons{
+    height: 30%;
+    width: 70px;
+    background: yellow;
+    text-align: center;
+    padding-top:30%;
+    bottom: 0;
+    position: absolute;
+}
+.nav-bar .socialicons .fa{
+    cursor: pointer;
+    padding: 10px;
+    height: auto;
+    margin: 10px 15px;
+    display: block;
+    border: 1px solid #000;
+    border-radius:50% ;
+}
+.left{
+    position: absolute;
+    background: white;
+    height: 625px;
+    width: 600px;
+    margin:0px 70px
+}
+.indianfood{
+    position: absolute;
+    font-family: 'Piedra', cursive;
+    font-size: 30px;
+    margin: 40px 10px;
+    cursor: pointer;
+}
+.dish{
+    position: absolute;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 700;
+    margin-top:150px;
+    margin-left: 50px;
+    font-size: 50px;
+}
+.information{
+    position: absolute;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 100;
+    margin-top: 230px;
+    margin-left:  50px;
+}
+.buynow{
+    position: absolute;
+    background-color: rgb(255, 251, 21);
+    height: 50px;
+    width: 130px;
+    margin-top: 430px;
+    margin-left:  70px;
+    font-size: 15px;
+    padding: 2%;
+    font-family:'Balsamiq Sans', sans-serif ;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.fa-arrow-left{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-top: 550px ;
+    padding: 2%;
+    margin-left: 590px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+    background: rgb(251, 255, 0);
+    cursor: pointer;
+}
+.right{
+    position: absolute;
+    background: rgb(251, 255, 0);
+    height: 625px;
+    width: 666px;
+    margin: 0px 700px;
+    overflow: hidden;
+}
+
+nav ul{
+    float:right ;
+    
+    margin-top: -150px;
+    margin-right: 40px;
+    opacity: 0;
+    transition: .7s;
+}
+nav ul li{
+    display: inline;
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a{
+    
+    cursor: default;
+    color: black;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px 13px;
+    border-radius: 3px; 
+    text-transform: uppercase;
+    /* float: right; */
+    transition: .4s;
+}
+nav ul li:hover a{
+    text-decoration: none;
+    padding-right: 5px;
+    color: orange;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:rgb(87, 81, 81);
+    float: right ;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgb(41, 27, 27);
+    border-radius: 3px;
+}
+label #btn{
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    color:yellow;
+    padding: 3px 6px;
+}
+
+#check:checked ~ ul{
+    margin-top: 15px;   
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fa-user-circle-o{
+   margin: 45px 600px;
+   position: absolute;
+   cursor: pointer;
+}
+.fa-arrow-right{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center ;
+    margin-top: 550px ;
+    padding: 2%;
+    background: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.fa:active,.buynow:active,.fa:active,.leftarrow:active,.rightarrow:active{
+    transform: scale(1.1);
+}
+.chickenbiryani{
+    position: absolute;
+    height: 750px;
+    width: 750px;
+    margin: 100px;
+    animation: chickenbiryani 1s ease-in;
+}
+@keyframes chickenbiryani{
+    0%{
+        transform:translateY(200px) translateX(200px);
+        opacity: 0;
+    } 
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes keyframes{
+    0%{
+        transform:  translateX(-60px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.keyframes {
+    animation-duration: 1s;
+    animation-name: keyframes;
+    -webkit-animation-name:keyframes ;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
